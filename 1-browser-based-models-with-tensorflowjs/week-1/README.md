@@ -11,7 +11,7 @@ TensorFlow allows you to do neural network training and inference right there in
 
 ## TensorFlow.js
 <p align="center">
-    <img src="" alt="">
+    <img src="img/1.png" alt="tensorflowjs">
     <i>Images 1 Design and architecture of TensorFlow.js</i>
 </p>
 
