@@ -91,7 +91,7 @@ const convertedData = trainingData.map(({xs, ys}) => {
         ys.species == "versicolor" ? 1 : 0
     ];
 
-    return{ xs: Object.values(xs), ys: Object.values(labels)};
+    return({ xs: Object.values(xs), ys: Object.values(ys.diagnosis)});
 }).batch(10);
 ```
 
