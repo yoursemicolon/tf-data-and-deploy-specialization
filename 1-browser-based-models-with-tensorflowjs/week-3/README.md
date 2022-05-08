@@ -11,7 +11,7 @@ We will use the [pre-trained toxicity model](https://github.com/tensorflow/tfjs-
 Another image classification library is called MobileNet. MobileNet is a small low-latency, low-power model, parameterized to meet the resource constraints of a variety of use cases. There are several versions but they can be built upon for classification, detection, embeddings, and other segmentation similar to how other popular large-scale models, such as Inception are used. MobileNets trade-off between latency, size, and accuracy while comparing favorably with popular state of the art models. MobileNets are trained to recognize a thousand classes.
 
 <p align="center">
-    <img src="img/1-mobilenet.png" alt="mobile-net"> <br>
+    <img src="img/1-mobilenet.png" alt="mobile-net" width="600"> <br>
     <i>Images 1 MobileNet Classes Example</i>
 </p>
 
@@ -22,7 +22,7 @@ In the next example, we will use the pre-trained MobileNet model to classify ima
 The probabiities don't all add up to one because there are 1,000 classes and the probability values for all 1,000 classes will add up to one. But to save time, this model just returns the top three.
 
 <p align="center">
-    <img src="img/2-mobilenet-example.png" alt="mobile-net-example"> <br>
+    <img src="img/2-mobilenet-example.png" alt="mobile-net-example" width="600"> <br>
     <i>Images 2 MobileNet Identifier Example</i>
 </p>
 
