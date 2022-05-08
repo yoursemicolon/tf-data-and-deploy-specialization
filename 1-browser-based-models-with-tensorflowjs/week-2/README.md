@@ -5,7 +5,7 @@ Unlike training in a Python where you can download 10,000 images, one after anot
 ## Creating a Convolutional Net with Javascript
 
 <p align="center">
-    <img src="img/1.png" alt="js-cnn"> <br>
+    <img src="img/1.png" alt="js-cnn" width="600"> <br>
     <i>Images 1 CNN in Javascript</i>
 </p>
 
@@ -20,14 +20,14 @@ Here are the explanation of the code above:
 * With a final layer of 10 units activated by softmax, that will provide the output classification given that we have ten labels in the data-set.
 
 <p align="center">
-    <img src="img/2-compile.png" alt="convjs-compile"> <br>
+    <img src="img/2-compile.png" alt="convjs-compile" width="600"> <br>
     <i>Images 2 Model Compile</i>
 </p>
 
 Something to note in compiling the model, parameters are passed in using a Javascript dictionary hence the braces. 
 
 <p align="center">
-    <img src="img/3-training.png" alt="convjs-training"> <br>
+    <img src="img/3-training.png" alt="convjs-training" width="600"> <br>
     <i>Images 3 Model Training</i>
 </p>
 
@@ -53,7 +53,7 @@ const fitCallbacks = tfvis.show.fitCallbacks(container, metrics);
 For the container, we just set a name and any required styles, and the visualization library will create the DOM elements to render the details. When we're training, the callback will create a container in which it will draw the feedback depending on the metrics that you select.
 
 <p align="center">
-    <img src="img/4-tfjs-vis.png" alt="tfjs-vis"> <br>
+    <img src="img/4-tfjs-vis.png" alt="tfjs-vis" width="600"> <br>
     <i>Images 4 Training Visualization</i>
 </p>
 
@@ -61,7 +61,7 @@ For the container, we just set a name and any required styles, and the visualiza
 A sprite sheet is a bitmap image file that contains several smaller graphics in a tiled grid arrangement. By compiling several graphics into a single file, you enable Animate and other applications to use the graphics while only needing to load a single file.
 
 <p align="center">
-    <img src="img/5-mnist-data.png" alt="mnist-data"> <br>
+    <img src="img/5-mnist-data.png" alt="mnist-data" width="600"> <br>
     <i>Images 5 Load MNIST Image</i>
 </p>
 
@@ -77,7 +77,7 @@ await data.load();
 Get the batches and resize them to the desired to 28 by 28 like this.
 
 <p align="center">
-    <img src="img/6-batches.png" alt="batches"> <br>
+    <img src="img/6-batches.png" alt="batches" width="600"> <br>
     <i>Images 6 Get and Resize Batches</i>
 </p>
 
