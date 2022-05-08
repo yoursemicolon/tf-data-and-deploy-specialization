@@ -3,7 +3,7 @@
 ## Features and Component of mobile AI
 These are some features for a mobile AI platform.
 <p align="center">
-    <img src="img/1-features.png" alt="features"> <br>
+    <img src="img/1-features.png" alt="features" width="600"> <br>
     <i>Image 1. Mobile AI Platform Features</i>
 </p>
 
@@ -18,7 +18,7 @@ You may have heard of mobile models like mobile nets and how they're designed fo
 To accomplish some of the other tasks, TensorFlow Lite comes with a utility that helps you convert TensorFlow models from their various formats into a special format that's consumable by TensorFlow Lite.
 
 <p align="center">
-    <img src="img/2-components.png" alt="components"> <br>
+    <img src="img/2-components.png" alt="components" width="600"> <br>
     <i>Image 2. Components in TensorFlow Lite</i>
 </p>
 
@@ -29,14 +29,14 @@ TensorFlow Lite comprises of two main components; a converter, and an interprete
 ## Architecture and Performance
 Once you've trained model, it has to go through a process of conversion before it can be used on a device
 <p align="center">
-    <img src="img/3-architecture.png" alt="architecture"> <br>
+    <img src="img/3-architecture.png" alt="architecture" width="600"> <br>
     <i>Image 3. Architecture</i>
 </p>
 
 Once you have it you'll use the tensorflow lite converter tools to flatten the model to prepare it for mobile or embedded devices.
 
 <p align="center">
-    <img src="img/4-performance.png" alt="performance"> <br>
+    <img src="img/4-performance.png" alt="performance" width="600"> <br>
     <i>Image 4. Performance</i>
 </p>
 
@@ -47,7 +47,7 @@ One way to improve inference on Android devices is by leveraging Androids neural
 Secondly inference can be boosted with Edge TPUs use as their solely built for operating on deep learning models. This is not just limited to serving models, but also to training them they're also known to be high performing and have a low-power footprint while being pretty small in size.
 
 <p align="center">
-    <img src="img/5-delegates.png" alt="Delegates"> <br>
+    <img src="img/5-delegates.png" alt="Delegates" width="600"> <br>
     <i>Image 5. TensorFlow Lite Delegates</i>
 </p>
 
@@ -57,7 +57,7 @@ Another form of acceleration which comes in tensorflow lite is a tensorflow lite
 It's critical that deployed machine learning models have optimal model size, low latency and power consumption.  It's critical that deployed machine learning models have optimal model size low latency and power consumption.
 
 <p align="center">
-    <img src="img/6-techniques.png" alt="techniques"> <br>
+    <img src="img/6-techniques.png" alt="techniques" width="600"> <br>
     <i>Image 6. Techniques</i>
 </p>
 
@@ -70,13 +70,13 @@ Several methods that one can use to achieve these types of optimizations:
 Quantization optimizes your model with reduced precision representations of weights and optionally activations for both storage and computation.
 
 <p align="center">
-    <img src="img/7-quantization.png" alt="Quantization"> <br>
+    <img src="img/7-quantization.png" alt="Quantization" width="600"> <br>
     <i>Image 7. Quantization</i>
 </p>
 
 ### TF Lite Workflow
 <p align="center">
-    <img src="img/8-tflite.png" alt="tf-lite-workflow"> <br>
+    <img src="img/8-tflite.png" alt="tf-lite-workflow" width="600"> <br>
     <i>Image 8. TF Lite Workflow</i>
 </p>
 
@@ -88,7 +88,7 @@ The workflow:
 In summary, the process you'll go through looks a little bit like this. 
 
 <p align="center">
-    <img src="img/9-process.png" alt="model-process"> <br>
+    <img src="img/9-process.png" alt="model-process" width="600"> <br>
     <i>Image 9. Process</i>
 </p>
 
@@ -98,21 +98,21 @@ You'll train a model with TensorFlow and then save it as a Saved Model. You'll u
 When you create a model with TensorFlow using the Keras APIs or with the low-level APIs, you'll save it out as a Keras model, a SavedModel or a set of concrete in-memory functions.
 
 <p align="center">
-    <img src="img/10-converter.png" alt="tf-lite-converter"> <br>
+    <img src="img/10-converter.png" alt="tf-lite-converter" width="600"> <br>
     <i>Image 10. TensorFlow Lite Converter</i>
 </p>
 
 The converter takes these and converts to the .TFlite formats which is a flat buffer that can then be used on the mobile device along with optional back ends like the neural network APIs or GPUs.
 
 <p align="center">
-    <img src="img/11-conversion.png" alt="parameters-for-conversion"> <br>
+    <img src="img/11-conversion.png" alt="parameters-for-conversion" width="600"> <br>
     <i>Image 11. Parameters for Conversion</i>
 </p>
 
 Depending on how your model is represented, you can then instantiate it from the SavedModel, from the Keras model, or from the concrete functions in order to get an output.
 
 <p align="center">
-    <img src="img/12-saved-model.png" alt="saved-model"> <br>
+    <img src="img/12-saved-model.png" alt="saved-model" width="600"> <br>
     <i>Image 12. Saved Model</i>
 </p>
 
@@ -121,19 +121,19 @@ The preferred standard methodology for saving models in TensorFlow 2.0 is the Sa
 To understand the interfaces of signatures of a SavedModel, we can call the SavedModel CLI script and get details about it with code like this.
 
 <p align="center">
-    <img src="img/13-saved-model-cli.png" alt="saved-model-cli"> <br>
+    <img src="img/13-saved-model-cli.png" alt="saved-model-cli" width="600"> <br>
     <i>Image 13. Saved Model CLI</i>
 </p>
 
 <p align="center">
-    <img src="img/14-saved-model-result.png" alt="saved-model-result"> <br>
+    <img src="img/14-saved-model-result.png" alt="saved-model-result" width="600"> <br>
     <i>Image 14. Saved Model Result</i>
 </p>
 
 For example, here, we can see that this model expects images to be input as 224 by 224 by 3. In other words, 24-bit color, 224 by 224 and their output is of shape 1,000 which tells me that it's classifying up to 1,000 classes.
 
 <p align="center">
-    <img src="img/15-export-savedmodel.png" alt="saved-model-export"> <br>
+    <img src="img/15-export-savedmodel.png" alt="saved-model-export" width="600"> <br>
     <i>Image 15. Exporting Saved Model</i> 
 </p>
 
@@ -144,11 +144,11 @@ You can notice there's a safe path convention being followed which is used by Te
 The simplest possible neural network is one that has one layer and that layer has one neuron.
 
 <p align="center">
-    <img src="img/16-example1.png" alt="example1"> <br>
+    <img src="img/16-example1.png" alt="example1" width="600"> <br>
 </p>
 
 <p align="center">
-    <img src="img/17-example1-2.png" alt="example1"> <br>
+    <img src="img/17-example1-2.png" alt="example1" width="600"> <br>
     <i>Image 16. Example 1</i> 
 </p>
 
@@ -161,7 +161,7 @@ We now have a model that can be deployed to Android, iOS, or Edge systems.
 ### Example 2 - Preexisting model
 For example we want to use a MobileNetV2 model that has been created before.
 <p align="center">
-    <img src="img/18-example2.png" alt="example2"> <br>
+    <img src="img/18-example2.png" alt="example2" width="600"> <br>
     <i>Image 17. Example 2</i> 
 </p>
 
@@ -172,7 +172,7 @@ For example we want to use a MobileNetV2 model that has been created before.
 ### Command Line Usage
 
 <p align="center">
-    <img src="img/19-command-lite.png" alt="cli"> <br>
+    <img src="img/19-command-lite.png" alt="cli" width="600"> <br>
     <i>Image 18. Command Line Usage</i> 
 </p>
 
@@ -182,28 +182,28 @@ If you don't have access to the Python code for generating the model, but you do
 Instead of quantizing a model during training and effectively changing your training code, you instead quantize as part of the process of converting the model to the TF-lite format. At its simplest, it converts all the floats in the weights of the model into ints. 
 
 <p align="center">
-    <img src="img/20-quantization.png" alt="quantization"> <br>
+    <img src="img/20-quantization.png" alt="quantization" width="600"> <br>
     <i>Image 19. Quantization</i> 
 </p>
 
 The default behavior of the converter is to optimize for both size and latency, but you can override this in code. You could also specify that you want to optimize for latency for improved performance or just leave it at the default where the converter will try to figure out the best balance between size and latency. 
 
 <p align="center">
-    <img src="img/21-post-training.png" alt="post-training-quantization"> <br>
+    <img src="img/21-post-training.png" alt="post-training-quantization" width="600"> <br>
     <i>Image 20. Post Training Quantization</i> 
 </p>
 
 In some cases, for example, with Edge TPUs, the accelerators use only integers. For this, the optimization toolkit allows you to do post-training integer quantization, which makes models up to four times smaller. 
 
 <p align="center">
-    <img src="img/22-post-training-int.png" alt="post-training-quantization"> <br>
+    <img src="img/22-post-training-int.png" alt="post-training-quantization" width="600"> <br>
     <i>Image 21. Post Training Integer Quantization</i> 
 </p>
 
 You can then further optimize by using calibration data where you run inference on a small set of inputs so as to determine the right scaling parameters to use when converting a model for integer quantization. Here's an example of converting a SavedModel to TensorFlow Lite with post-training integer quantization.
 
 <p align="center">
-    <img src="img/23-post-training-int.png" alt="post-training-quantization"> <br>
+    <img src="img/23-post-training-int.png" alt="post-training-quantization" width="600"> <br>
     <i>Image 22. Post Training Integer Quantization</i> 
 </p>
 
@@ -212,7 +212,7 @@ You can then further optimize by using calibration data where you run inference 
 * Pass our generator to the TF Lite converter as a representative data set. A representative data set is used for evaluating optimizations by recording dynamic ranges.
 
 <p align="center">
-    <img src="img/24-full-int.png" alt="full-int"> <br>
+    <img src="img/24-full-int.png" alt="full-int" width="600"> <br>
     <i>Image 23. Full-integer Quantization</i> 
 </p>
 
@@ -224,7 +224,7 @@ Conversion can sometimes be harder as you might come across some problems with u
 In the model conversion process, Those unsupported Ops can come off as point of friction. While TensorFlow lite will continue to have the built-in Ops optimized for mobile and embedded devices, now it's possible to use a subset of the TensorFlow Ops when the built-in ones do not suffice. With TF select, you can do this, keeping in mind that a small bulk will be added to your model's. size we'll look at that next.
 
 <p align="center">
-    <img src="img/25-tfselect.png" alt="tf-select"> <br>
+    <img src="img/25-tfselect.png" alt="tf-select" width="600"> <br>
     <i>Image 24. TF-Select</i> 
 </p>
 
@@ -235,14 +235,14 @@ It's a small modifications are how you convert your models TF lite. This is pret
 This is a summary of the paths you're likely to follow when optimizing your TF Lite models. If you don't intend to quantize your model, you'll be ending up with a floating point model. However, if you do wish to quantize only the weights in the model, you can do so just by setting one of the post-training optimization modes in the converter. 
 
 <p align="center">
-    <img src="img/26-optimizing.png" alt="optimizing"> <br>
+    <img src="img/26-optimizing.png" alt="optimizing" width="600"> <br>
     <i>Image 25. Paths in Optimization</i> 
 </p>
 
 The converter will do its best to quantize all the ops, but your model may still end up with a few floating point ops. This optimization provides latencies close to fully fixed point inference. We can further get latency improvements by quantizing both the weights and activations with a representative dataset. On a side note, at times you may not have access to a representative dataset, and you don't have to worry too much about it as you can get along just fine without it by having a model that has some floating point ops. Later, if you wish to have the model only output integers, a quantization target specification can be set in the converter to generate a model with quantized ops. But if all else fails and you're encountering errors in this procedure, then you might have to use TF select to obtain a model with as many ops as possible. 
 
 <p align="center">
-    <img src="img/27-tflite-interpreter.png" alt="interpreter"> <br>
+    <img src="img/27-tflite-interpreter.png" alt="interpreter" width="600"> <br>
     <i>Image 26. TF LIte Interpreter</i> 
 </p>
 
@@ -251,7 +251,7 @@ One really nice feature is the ability to test your model using Python on your d
 ## Running the Models
 
 <p align="center">
-    <img src="img/28-running-models.png" alt="running-models"> <br>
+    <img src="img/28-running-models.png" alt="running-models" width="600"> <br>
     <i>Image 27. Running Models</i> 
 </p>
 
@@ -260,7 +260,7 @@ There's typically two ways that you can get models. For each of these, you can c
 2. Build a custom model
 
 <p align="center">
-    <img src="img/29-basic-model-running.png" alt="basic-model-running"> <br>
+    <img src="img/29-basic-model-running.png" alt="basic-model-running" width="600"> <br>
     <i>Image 28. Basic Model Running</i> 
 </p>
 
