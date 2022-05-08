@@ -13,7 +13,7 @@ TensorFlow allows you to do neural network training and inference right there in
 
 ### TensorFlow.js
 <p align="center">
-    <img src="img/1.png" alt="tensorflowjs"> <br>
+    <img src="img/1.png" alt="tensorflowjs" width="600"> <br>
     <i>Images 1 Design and architecture of TensorFlow.js</i>
 </p>
 
@@ -51,7 +51,7 @@ Training should be an asynchronous function because it will take an indeterminat
 ```
 
 <p align="center">
-    <img src="img/2-async.png" alt="async"> <br>
+    <img src="img/2-async.png" alt="async" width="600"> <br>
     <i>Images 2 Training Model</i>
 </p>
 
@@ -99,7 +99,7 @@ The data comes back from tf.data.csv as dictionaries, and for training we want t
 
 ### One-hot Encoding
 <p align="center">
-    <img src="img/3.png" alt="one-hot-encoding"> <br>
+    <img src="img/3.png" alt="one-hot-encoding" width="600"> <br>
     <i>Images 3 One Hot Encoding</i>
 </p>
 
@@ -108,7 +108,7 @@ If we feed labels into the neural network when training it that represent the de
 ### Designing the Neural Network
 
 <p align="center">
-    <img src="img/4-nn.png" alt="designing-nn"> <br>
+    <img src="img/4-nn.png" alt="designing-nn" width="600"> <br>
     <i>Images 4 Designing Neural Network</i>
 </p>
 
@@ -155,7 +155,7 @@ We will create a neural network that can classify the 3 types of Iris plants fou
 When launching the C1_W1_Lab_2_iris_classifier.html  file in Chrome browser, make sure to open Developer Tools to see the output in the Console. After training has finished, the code will alert the name of the predicted Iris plant. In this particular example, the predicted Iris plant is a Setosa.
 
 <p align="center">
-    <img src="img/10-setosa.png" alt="setosa"> <br>
+    <img src="img/10-setosa.png" alt="setosa" width="600"> <br>
 </p>
 
 ## References
